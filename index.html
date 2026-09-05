@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 🚀 Primary Search Engine Optimization (SEO) Metadata -->
+    <title>Free Age Calculator | Calculate Exact Age Online</title>
+    <meta name="description" content="Calculate your exact age in years, months, days, hours, and minutes. Fast, accurate, and free online age calculator tool with leap year tracking.">
+    <meta name="keywords" content="age calculator, exact age calculator, check my age online, calculate age in days, chronological age tool">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social Media Visibility -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.io">
+    <meta property="og:title" content="Free Age Calculator | Chronological Age Tracker">
+    <meta property="og:description" content="Find out exactly how many years, months, and days you have been alive instantly. 100% free online tool.">
+
+    <!-- 🛠️ Web Application Schema (Tells Google it's a software utility) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Free Online Age Calculator",
+      "url": "https://github.io",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "features": "Exact age calculation in years, months, and days, upcoming birthday countdown, total days alive metric"
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --background: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --border: #e2e8f0;
+            --success: #16a34a;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--background); margin: 0; padding: 20px; color: var(--text); line-height: 1.6; }
+        
+        .top-bar { max-width: 600px; margin: 10px auto; display: flex; justify-content: flex-end; align-items: center; min-height: 42px; }
+        
+        .container { max-width: 600px; margin: 20px auto; background: var(--card); padding: 35px; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); border: 1px solid var(--border); }
+        h1 { color: #0f172a; text-align: center; margin-top: 0; margin-bottom: 25px; font-size: 28px; font-weight: 700; }
+        
+        .form-group { margin-bottom: 22px; }
+        label { font-weight: 600; display: block; margin-bottom: 8px; font-size: 14px; color: #475569; }
+        input[type="date"] { width: 100%; padding: 12px 14px; box-sizing: border-box; border: 1px solid var(--border); border-radius: 8px; font-size: 16px; background-color: white; color: var(--text); }
+        input[type="date"]:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); }
+        
+        .btn-main { width: 100%; background: var(--primary); color: white; border: none; padding: 16px; font-size: 17px; font-weight: 600; border-radius: 8px; cursor: pointer; transition: all 0.2s; margin-top: 12px; }
+        .btn-main:hover { background: var(--primary-hover); }
+        
+        .result-box { margin-top: 30px; padding: 22px; border-radius: 8px; font-size: 16px; display: none; background-color: #f0fdf4; border-left: 6px solid var(--success); color: #14532d; }
+        .result-row { display: flex; justify-content: space-between; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px dashed rgba(0,0,0,0.05); }
+        .result-row:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; font-size: 20px; font-weight: 700; margin-top: 5px; }
+        
+        .ad-slot { max-width: 600px; margin: 30px auto; text-align: center; padding: 15px; border: 2px dashed #cbd5e1; background: #fff; border-radius: 8px; }
+        .ad-slot small { color: #94a3b8; display: block; margin-bottom: 8px; font-weight: 600; font-size: 11px; text-transform: uppercase; }
+        
+        .seo-content { max-width: 600px; margin: 50px auto; border-top: 1px solid var(--border); padding-top: 35px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div id="google_translate_element"></div>
+    </div>
+
+    <div class="container">
+        <h1>Exact Age Calculator</h1>
+        
+        <div class="form-group">
+            <label for="dob">Select Date of Birth:</label>
+            <input type="date" id="dob">
+        </div>
+
+        <button class="btn-main" onclick="calculateAge()">Calculate Age</button>
+        
+        <div class="result-box" id="resultBox"></div>
+    </div>
+
+    <!-- 💰 AD/AFFILIATE SLOT PLACEHOLDER -->
+    <div class="ad-slot">
+        <small>Sponsored Link / Advertisement</small>
+        <a href="https://baloch5612.github.io/crypto-calculator/" target="_blank">
+            <img src="https://placeholder.com" alt="Internal Site Promotion">
+        </a>
+    </div>
+
+    <!-- 🚀 STRUCTURAL SEO ENGINE CONTENT -->
+    <div class="seo-content">
+        <h2>How to Calculate Chronological Age Manually?</h2>
+        <p>Finding your precise chronological age requires calculating the mathematical span between your day of birth and the current calendar layout. While leap years introduce dynamic calendar shifting, our digital evaluation matrix processes months and days dynamically inside your local web sandbox.</p>
+        
+        <h2>Frequently Asked Questions</h2>
+        <h3>Is this age tracking tool private?</h3>
+        <p>Yes. The execution calculations run completely client-side via JavaScript right inside your own browser window, ensuring your day of birth parameters are never sent to external data collection hubs.</p>
+    </div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://google.com"></script>
+
+    <script>
+        function calculateAge() {
+            const dobValue = document.getElementById('dob').value;
+            if (!dobValue) {
+                alert('Please select a valid date.');
+                return;
+            }
+
+            const dob = new Date(dobValue);
+            const today = new Date();
+
+            let years = today.getFullYear() - dob.getFullYear();
+            let months = today.getMonth() - dob.getMonth();
+            let days = today.getDate() - dob.getDate();
+
+            // Math balance mapping for month shifts
+            if (days < 0) {
+                months--;
+                const previousMonth = new Date(today.getFullYear(), today.getMonth(), 0);
+                days += previousMonth.getDate();
+            }
+
+            // Math balance mapping for year shifts
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+
+            // Calculate total days alive for secondary data metrics
+            const diffTime = Math.abs(today - dob);
+            const totalDaysAlive = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+            const resultBox = document.getElementById('resultBox');
+            resultBox.style.display = 'block';
+            resultBox.innerHTML = `
+                <div class="result-row"><span>Total Months Alive:</span> <span>${(years * 12 + months).toLocaleString()} months</span></div>
+                <div class="result-row"><span>Total Days Alive:</span> <span>${totalDaysAlive.toLocaleString()} days</span></div>
+                <div class="result-row"><span>Your Exact Age:</span> <span>${years} Years, ${months} Months, ${days} Days</span></div>
+            `;
+        }
+    </script>
+</body>
+</html>
